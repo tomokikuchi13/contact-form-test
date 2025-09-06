@@ -8,14 +8,13 @@ use App\Models\Category;
 
 class ContactController extends Controller
 {
-    // お問い合わせフォーム表示
     public function show()
     {
         $categories = Category::all();
         return view('contact', compact('categories'));
     }
 
-    // 確認画面
+    
     public function confirm(Request $request)
     {
         $validated = $request->validate([
@@ -32,18 +31,18 @@ class ContactController extends Controller
             'content'      => 'required|string|max:1000',
         ]);
 
-        // 性別のテキスト変換
+        
         $genderText = [
             1 => '男性',
             2 => '女性',
             3 => 'その他'
         ][$validated['gender']] ?? '';
 
-        // カテゴリ名取得
+        
         $category = Category::find($validated['category_id']);
         $categoryName = $category ? ($category->content ?? $category->name) : '';
 
-        // 電話番号結合して 'tel' キーを追加
+        
         $validated['tel'] = $validated['tel1'] . '-' . $validated['tel2'] . '-' . $validated['tel3'];
 
         return view('confirm', [
@@ -53,7 +52,7 @@ class ContactController extends Controller
         ]);
     }
 
-    // データ保存＆完了画面表示
+    
     public function submit(Request $request)
     {
         if ($request->input('action') === 'back') {
@@ -76,11 +75,11 @@ class ContactController extends Controller
 
         $validated['tel'] = $validated['tel1'].'-'.$validated['tel2'].'-'.$validated['tel3'];
 
-         // サンクスページへリダイレクト
+         
         return redirect()->route('contact.thanks');
     }
 
-    // サンクスページ
+    
     public function thanks()
     {
         return view('thanks');

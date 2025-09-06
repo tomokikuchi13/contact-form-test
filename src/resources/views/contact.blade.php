@@ -20,11 +20,11 @@
       <div class="contact-form__heading">Contact</div>
     </div>
 
-    <!-- フォーム開始 -->
+    
     <form class="form" action="{{ route('contact.confirm') }}" method="POST">
       @csrf
 
-      <!-- お名前 -->
+      
       <div class="form__group name">
         <div class="form__group-title">
           <span class="form__label--item">お名前</span>
@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <!-- 性別 -->
+      
       <div class="form__group gender">
         <div class="form__group-title">
           <span class="form__label--item">性別</span>
@@ -62,7 +62,7 @@
         </div>
       </div>
 
-      <!-- メール -->
+      
       <div class="form__group">
         <div class="form__group-title">
           <span class="form__label--item">メールアドレス</span>
@@ -76,7 +76,7 @@
         </div>
       </div>
 
-      <!-- 電話番号 -->
+      
       <div class="form__group">
         <div class="form__group-title">
           <span class="form__label--item">電話番号</span>
@@ -99,7 +99,7 @@
         </div>
       </div>
 
-      <!-- 住所 -->
+      
       <div class="form__group">
         <div class="form__group-title">
           <span class="form__label--item">住所</span>
@@ -112,7 +112,7 @@
         </div>
       </div>
 
-      <!-- 建物名 -->
+      
       <div class="form__group">
         <div class="form__group-title">
           <span class="form__label--item">建物名・部屋番号</span>
@@ -124,7 +124,7 @@
         </div>
       </div>
 
-      <!-- お問い合わせ種類 -->
+      
       <div class="form__group">
         <div class="form__group-title">
           <span class="form__label--item">お問い合わせの種類</span>
@@ -145,7 +145,7 @@
         </div>
       </div>
 
-      <!-- お問い合わせ内容 -->
+      
       <div class="form__group form__group--textarea">
         <div class="form__group-title">
           <span class="form__label--item">お問い合わせ内容</span>
@@ -158,7 +158,7 @@
         </div>
       </div>
 
-      <!-- 確認ボタン -->
+      
       <div class="form__button">
         <button class="form__button-submit" type="submit">確認画面</button>
       </div>

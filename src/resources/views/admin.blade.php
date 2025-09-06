@@ -85,7 +85,6 @@ header {
 }
 .admin__search-form .form__button-modify:hover { background-color: #82756A; color: #fff; }
 
-/* データテーブル */
 .admin-table__inner {
   width: 1183px;
   margin: 0 auto;
@@ -126,7 +125,7 @@ header {
 }
 .admin-table__text:last-child { border-bottom: 1px solid #E0DFDE; }
 
-/* 詳細ボタン */
+
 .detail-button {
   width: 76px;
   height: 39px;
@@ -142,7 +141,7 @@ header {
   text-decoration: none;
 }
 
-/* ページネーション */
+
 .pagination {
   width: 1183px;
   margin: 10px auto 20px auto;
@@ -161,7 +160,7 @@ header {
 .pagination button.active,
 .pagination button:hover { background-color: #82756A; color: #fff; }
 
-/* CSSモーダル */
+
 .modal-checkbox { display: none; }
 .modal {
   position: fixed;
@@ -214,7 +213,7 @@ header {
 <div class="admin__content">
   <div class="admin__heading">Admin</div>
 
-  <!-- 検索フォーム -->
+  
   <form class="admin__search-form">
     <input type="text" name="keyword" placeholder="名前 または メールアドレスを入力してください">
     <select name="gender">
@@ -232,7 +231,7 @@ header {
     <button type="reset" class="form__button-modify">リセット</button>
   </form>
 
-  <!-- ページネーション -->
+  
   <div class="pagination">
     <button>&lt;</button>
     <button class="active">1</button>
@@ -243,7 +242,7 @@ header {
     <button>&gt;</button>
   </div>
 
-  <!-- データテーブル -->
+  
   <table class="admin-table__inner">
     <thead>
       <tr>
@@ -255,7 +254,7 @@ header {
       </tr>
     </thead>
     <tbody>
-      <!-- 7行ダミーデータ -->
+      
       <tr>
         <td class="admin-table__text">山田 太郎</td>
         <td class="admin-table__text">男性</td>
@@ -278,7 +277,7 @@ header {
         </td>
       </tr>
 
-      <!-- 以下6行はID番号だけ変えて同様に作成 -->
+      
       <tr>
         <td class="admin-table__text">鈴木 花子</td>
         <td class="admin-table__text">女性</td>

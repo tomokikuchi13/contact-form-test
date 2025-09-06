@@ -8,7 +8,7 @@ class LoginUserRequest extends FormRequest
 {
     public function authorize()
     {
-        return true; // 全ユーザーアクセス可
+        return true; 
     }
 
     public function rules()

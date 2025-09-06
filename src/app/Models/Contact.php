@@ -11,7 +11,7 @@ class Contact extends Model
         'tel', 'address', 'building', 'category_id', 'content'
     ];
 
-    // 正しいリレーション
+    
     public function category()
     {
         return $this->belongsTo(Category::class);
