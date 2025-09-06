@@ -1,0 +1,284 @@
+body {
+    font-family: 'Inika', serif;
+    color: #8B7969;
+    margin: 0;
+    padding: 0;
+    width: 1512px;
+    height: 982px;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header__inner {
+    width: 1512px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo {
+    font-family: 'Inika', serif;
+    /* 念のため個別指定 */
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    color: #8B7969;
+    line-height: 100px;
+}
+
+main {
+    width: 1512px;
+}
+
+.contact-form__heading {
+    font-family: 'Inika', serif;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    color: #8B7969;
+    margin: 40px 0 30px;
+}
+
+/* =======================
+   フォーム全体
+======================= */
+.form {
+    margin: 50px auto;
+    width: 972px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #8B7969;
+    font-family: 'Inika', serif;
+}
+
+/* =======================
+   フォーム入力欄共通
+======================= */
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+    font-family: 'Inika', serif;
+}
+
+.form__group-title,
+.form__label--item {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 20px;
+    width: auto;
+    font-family: 'Inika', serif;
+}
+
+.form__label--required {
+    color: #FF9494;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Inika', serif;
+}
+
+.form__group-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 628px;
+    height: 38px;
+    line-height: normal;
+    font-family: 'Inika', serif;
+}
+
+/* =======================
+   名前入力（姓・名）
+======================= */
+.form__group-content.name {
+    gap: 20px;
+    /* 姓と名の間隔を倍に */
+}
+
+.form__input--nametext input {
+    width: 300px;
+    height: 38px;
+    font-size: 14px;
+    padding: 0 8px;
+    background-color: #F4F4F4;
+    border: none;
+    outline: none;
+    font-family: 'Inika', serif;
+}
+
+/* =======================
+   メール・住所入力
+======================= */
+.form__input--mailaddtext input {
+    width: 618px;
+    height: 38px;
+    font-size: 14px;
+    background-color: #F4F4F4;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+    font-family: 'Inika', serif;
+}
+
+/* =======================
+   電話番号
+======================= */
+.form__group-content.tel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inika', serif;
+}
+
+.form__input--teltext input {
+    width: 178px;
+    height: 38px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #F4F4F4;
+    border: none;
+    outline: none;
+    font-family: 'Inika', serif;
+}
+
+.tel-hyphen {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Inika', serif;
+}
+
+/* =======================
+   性別ラジオボタン
+======================= */
+.form__group-content.gender {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Inika', serif;
+}
+
+.form__input--radio {
+    font-size: 18px;
+    color: #8B7969;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    font-family: 'Inika', serif;
+}
+
+.form__input--radio input[type="radio"] {
+    accent-color: #8B7969;
+    transform: scale(1.1);
+}
+
+/* =======================
+   セレクトボックス
+======================= */
+.form__input--kindstext {
+    position: relative;
+    font-family: 'Inika', serif;
+}
+
+.form__input--kindstext select {
+    width: 331px;
+    height: 38px;
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: #F4F4F4;
+    border: none;
+    outline: none;
+    color: #8B7969;
+    appearance: none;
+    font-family: 'Inika', serif;
+}
+
+.form__input--kindstext::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+    color: #8B7969;
+    font-family: 'Inika', serif;
+}
+
+/* =======================
+   お問い合わせ内容（テキストエリア）
+======================= */
+.form__group.form__group--textarea {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    gap: 10px;
+    font-family: 'Inika', serif;
+}
+
+.form__group.form__group--textarea .form__group-title,
+.form__group.form__group--textarea .form__label--item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-family: 'Inika', serif;
+}
+
+.form__input--kindscontenttext textarea {
+    width: 618px;
+    height: 122px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #F4F4F4;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #333;
+    font-family: 'Inika', serif;
+}
+
+.form__group.form__group--textarea .form__group-content {
+    height: auto;
+    font-family: 'Inika', serif;
+}
+
+/* =======================
+   エラーメッセージ
+======================= */
+.form__error {
+    font-size: 12px;
+    color: #FF9494;
+    font-family: 'Inika', serif;
+}
+
+/* =======================
+   送信ボタン
+======================= */
+.form__button {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Inika', serif;
+}
+
+.form__button-submit {
+    width: 160px;
+    height: 46px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #82756A;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inika', serif;
+}

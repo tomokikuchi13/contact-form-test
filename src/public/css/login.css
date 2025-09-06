@@ -1,0 +1,150 @@
+/* 全体リセット */
+body {
+    width: 1512px;
+    height: 982px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inika', serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ヘッダー */
+.header {
+    width: 1512px;
+    height: 100px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid #E0DFDE;
+    padding: 0 40px;
+}
+
+.header__logo {
+    font-size: 40px;
+    color: #8B7969;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Registerボタン */
+.header__register {
+    position: absolute;
+    right: 40px;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #8B7969;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.header__register:hover {
+    background-color: #6f5f54;
+}
+
+/* コンテンツ全体 */
+.contents {
+    width: 1512px;
+    height: 882px;
+    background-color: #E1DBD699;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* タイトル */
+.login-title {
+    font-size: 35px;
+    color: #8B7969;
+    margin-top: 100px;
+    /* 上に配置 */
+    margin-bottom: 40px;
+    /* ボックスとの間隔 */
+    text-align: center;
+}
+
+/* ログインボックス */
+.login-box {
+    width: 736px;
+    height: 579px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 152px;
+}
+
+/* フォームグループ */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    /* 横幅固定 */
+}
+
+/* ラベル */
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 25px;
+    color: #8B7969;
+    text-align: left;
+    /* 左端揃え */
+}
+
+/* 入力欄 */
+.form-group input {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #E0DFDE;
+    border-radius: 6px;
+    background-color: #F9F9F9;
+    width: 445px;
+    /* 横幅固定 */
+}
+
+/* placeholder */
+.form-group input::placeholder {
+    color: #B0A89A;
+    font-size: 14px;
+}
+
+/* ログインフォーム全体 */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* ラベルと入力欄は左寄せ */
+}
+
+/* ログインボタンを中央に配置 */
+.login-button {
+    margin-top: 20px;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #8B7969;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 160px;
+    /* 横幅160px */
+    /* 左右中央に配置 */
+    align-self: center;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #6f5f54;
+}

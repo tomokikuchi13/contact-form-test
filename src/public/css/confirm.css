@@ -1,0 +1,122 @@
+body {
+    font-family: 'Inika', serif;
+    color: #8B7969;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    border-bottom: 1px solid #E0DFDE;
+    text-align: center;
+    line-height: 100px;
+}
+
+.header__logo {
+    font-size: 40px;
+    color: #8B7969;
+}
+
+/* 見出し */
+.contact-form__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact-form__heading {
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 0 20px;
+    /* 上下の余白を少なめに */
+}
+
+/* フォーム */
+.form {
+    width: 972px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* グループ間のスペースを削除 */
+}
+
+/* 各グループ */
+.form__group {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    /* 下余白なし */
+}
+
+/* ラベル */
+.form__group-title {
+    flex: 0 0 300px;
+    /* ラベル幅固定 */
+    background-color: #BAA899;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 8px;
+    /* パディングを少なめに */
+    border: 1px solid #E0DFDE;
+    box-sizing: border-box;
+}
+
+/* 内容 */
+.form__group-content {
+    flex: 1;
+    border: 1px solid #E0DFDE;
+    padding: 6px 8px;
+    /* パディングを少なめに */
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* readonly 入力欄 */
+input[readonly],
+textarea[readonly] {
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    color: #8B7969;
+    font-family: 'Inika', serif;
+    box-sizing: border-box;
+    padding: 2px 4px;
+    /* さらにスッキリ */
+}
+
+textarea[readonly] {
+    height: 100px;
+    resize: none;
+}
+
+/* ボタンラッパー */
+.form__button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    /* 上余白を控えめに */
+}
+
+/* 送信ボタン */
+.form__button-submit {
+    width: 160px;
+    height: 46px;
+    background-color: #82756A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* 修正ボタン */
+.form__button-modify {
+    width: 160px;
+    height: 46px;
+    background: none;
+    border: 1px solid #82756A;
+    color: #82756A;
+    cursor: pointer;
+}

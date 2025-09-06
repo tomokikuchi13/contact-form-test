@@ -1,0 +1,78 @@
+/* =========================
+   全体リセット
+========================= */
+body {
+    font-family: 'Inika', serif;
+    color: #8B7969;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* =========================
+   Thanksページ全体
+========================= */
+.thanks-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 垂直方向中央 */
+    align-items: center;
+    /* 横方向中央 */
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* 背景の大きなThank you文字 */
+.thanks-page__background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 280px;
+    color: rgba(139, 121, 105, 0.05);
+    /* 薄く透過 */
+    font-weight: bold;
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+    /* 折り返さない */
+}
+
+/* メインコンテンツ */
+.thanks-page__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* メッセージ */
+.thanks-page__message {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    /* ボタンとの間隔 */
+}
+
+/* HOMEボタン */
+.thanks-page__home-button {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #8B7969;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 146px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.thanks-page__home-button:hover {
+    background-color: #a07d6d;
+}
